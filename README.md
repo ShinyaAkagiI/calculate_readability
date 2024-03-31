@@ -52,13 +52,13 @@ https://cir.nii.ac.jp/crid/1391975276374773248
 # ライセンス
 - calculate-readability
 	- Python Software Foundation License
-	- Copyright (C) 2023-2024 Shinya Akagi
+	- Copyright (C) 2024 Shinya Akagi
 - divide-char-type
 	- Python Software Foundation License
 	- Copyright (C) 2023-2024 Shinya Akagi
 - count-syllable
 	- Python Software Foundation License
-	- Copyright (C) 2023-2024 Shinya Akagi
+	- Copyright (C) 2024 Shinya Akagi
 - nltk
 	- Apache License 2.0
 	- Copyright (C) 2001-2023 NLTK Project
