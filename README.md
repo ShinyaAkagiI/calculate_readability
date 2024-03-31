@@ -34,7 +34,7 @@ pip uninstall calculate-readability divide-char-type count-syllable nltk
 ```
 from calculate_readability import calculate_readability
 
-data = count_syllable("今日の天気は晴れです。明日は曇りです。")
+data = calculate_readability("今日の天気は晴れです。明日は曇りです。")
 
 print(data["jfre"])
 ```
