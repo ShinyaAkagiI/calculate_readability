@@ -34,17 +34,25 @@ pip uninstall calculate-readability divide-char-type count-syllable nltk
 ```
 from calculate_readability import calculate_readability
 
-data = calculate_readability("今日の天気は晴れです。明日は曇りです。")
+data = calculate_readability("今日の天気は晴れです。明日は曇りです。\n明後日は雨です。")
 
+print(data["raw_text"])
+print(data["text"])
 print(data["jfre"])
+
+print(data["break"][0]["text"])
+print(data["break"][0]["jfre"])
+
+print(data["break"][0]["sentence"][0]["text"])
+print(data["break"][0]["sentence"][0]["jfre"])
 ```
 
  
 # 論文
 
-赤木信也ら：変数置き換えモデルを用いた医療関連文書の可読性分析,  
-バイオメディカル・ファジィ・システム学会誌 19 (1), 19-27, 2017  
-https://cir.nii.ac.jp/crid/1391975276374773248  
+- 赤木信也ら：変数置き換えモデルを用いた医療関連文書の可読性分析,  
+  - バイオメディカル・ファジィ・システム学会誌 19 (1), 19-27, 2017  
+  - https://cir.nii.ac.jp/crid/1391975276374773248  
 
 別途、論文化、または、学会発表を予定してます。  
 

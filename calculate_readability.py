@@ -130,7 +130,8 @@ def calculate_readability(document):
     text = re.sub("\r?\n$", "", text)            # 文末の改行を削除
     text_break = re.split(re_break, text)        # 段落単位に分割
 
-    data = {"raw_text":document, "jfre":None, "jfkg":None, "jari":None, "jcli":None, "jsmog":None,
+    fixed_text = divide_char_type(text)[0]       # 整形後字種分割リスト
+    data = {"raw_text":document, "text":fixed_text, "jfre":None, "jfkg":None, "jari":None, "jcli":None, "jsmog":None,
             "break":[]
            }
 
