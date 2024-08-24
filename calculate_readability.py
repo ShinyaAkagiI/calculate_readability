@@ -55,13 +55,13 @@ def jari(sentence, sentence_type):
     for i in range(len(sentence_type)):
         # 単語が平仮名の場合
         if sentence_type[i] == 0:
-            acw_sum += math.log(1/88)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/88)/math.log(1/61)*len(sentence[i])
         # 単語がカタカナの場合
         elif sentence_type[i] == 1:
-            acw_sum += math.log(1/141)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/141)/math.log(1/61)*len(sentence[i])
         # 単語が漢字の場合
         elif sentence_type[i] == 2:
-            acw_sum += math.log(1/20898)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/20898)/math.log(1/61)*len(sentence[i])
         # 単語がアルファベット,数字の場合
         if sentence_type[i] == 3 or sentence_type[i] == 4:
             acw_sum += len(sentence[i])
@@ -80,13 +80,13 @@ def jcli(sentence, sentence_type):
     for i in range(len(sentence_type)):
         # 単語が平仮名の場合
         if sentence_type[i] == 0:
-            acw_sum += math.log(1/88)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/88)/math.log(1/61)*len(sentence[i])
         # 単語がカタカナの場合
         elif sentence_type[i] == 1:
-            acw_sum += math.log(1/141)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/141)/math.log(1/61)*len(sentence[i])
         # 単語が漢字の場合
         elif sentence_type[i] == 2:
-            acw_sum += math.log(1/20898)/math.log(1/36)*len(sentence[i])
+            acw_sum += math.log(1/20898)/math.log(1/61)*len(sentence[i])
         # 単語がアルファベット,数字の場合
         if sentence_type[i] == 3 or sentence_type[i] == 4:
             acw_sum += len(sentence[i])
