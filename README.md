@@ -19,6 +19,23 @@ jSMOG = 1.031√(30×PS)+3.1291
 *PS = 英語3音節・漢字3字以上の字種分割語数/センテンス数  
   
 シャノン情報量に基づく重みは、英数字（61種類）を1として、ひらがな（88種類）をlog(1/88)/log(1/61)で，カタカナ（141種類）をlog(1/141)/log(1/61)で、漢字（20898種類）をlog(1/20898)/log(1/61)でそれぞれ重み付けする.  
+ 
+# 評価表
+jFREはReading Ease Scoreに照らし合わせて評価します。  
+jFKG、jARI、jCLI、jSMOGはEstimated Reading Gradeに照らし合わせて評価します。  
+  
+| Reading Ease Score | Style Description | Estimated Reading Grade | Estimated Percent of U.S. Adults (1949) |
+| :---: | :---: | :---: | :---: |
+| 0 to 30: | Very Difficult | College graduate | 4.5 |
+| 30 to 50: | Difficult | 13th to 16th grade | 33 |
+| 50 to 60: | Fairly Difficult | 10th to 12th grade | 54 |
+| 60 to 70: | Standard | 8th to 9th grade | 83 |
+| 70 to 80: | Fairly Easy | 7th grade | 88 |
+| 80 to 90: | Easy | 6th grade | 91 |
+| 90 to 100: | Very Easy | 5th grade | 93 |
+
+- William H. DuBay: The Principles of Readability, 2004
+  - https://files.eric.ed.gov/fulltext/ED490073.pdf
   
 # セットアップ
 ```
