@@ -95,7 +95,7 @@ def jcli(sentence, sentence_type):
             asl_sum -= 1
     asl = asl_sum
     acw = acw_sum/asl_sum
-    result = (5.88*acw)+(29.6/asl)-15.8 
+    result = (5.88*acw)-(29.6/asl)-15.8 
     return result
 
 
