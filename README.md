@@ -49,6 +49,13 @@ pip uninstall calculate-readability divide-char-type count-syllable nltk
 
 # 使用方法
 ```
+# cmudictの初回ダウンロード処理
+import nltk
+try:
+    nltk.data.find("corpora/cmudict")
+except LookupError:
+    nltk.download("cmudict")
+
 from calculate_readability import calculate_readability
 
 data = calculate_readability("今日の天気は晴れです。明日は曇りです。\n明後日は雨です。")
